@@ -20,7 +20,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/auth.php';
 
-Route::get('/order-stats', [OrderStatsController::class, 'statsForLast7Days'])->name('order-stats');
+Route::get('/order-stats', [OrderStatsController::class, 'showStatsPage'])->name('order-stats');
 
 
 

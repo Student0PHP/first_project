@@ -20,7 +20,8 @@ return new class extends Migration
             $table->enum('status', [
                 'created','payed','started','finished','confirmed','closed','canceled'
             ]);
-            $table->timestamps();
+            $table->timestamps('created_at');
+            $table->timestamps('updated_at');
 
         });
     }
